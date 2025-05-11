@@ -1,0 +1,25 @@
+Mateus Arnaud Santos de Sousa Goldbarg
+cd tarefa-git
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead .
+echo "Esta é a versão da branch main." > texto.txt
+git add texto.txt
+git commit -m "texto branch main"
+git checkout -b feature-1
+echo "Esta é a versão da branch feature-1." > texto.txt
+git add texto.txt
+git commit -m "texto branch feature-1"
+git checkout main
+echo "Esta é outra versão na branch main." > texto.txt
+git add texto.txt
+git commit -m "Modifica texto.txt na branch main"
+git merge feature-1
+# resolve conflito manualmente
+git add texto.txt
+git commit -m "Resolve conflito entre main e feature-1 no texto.txt"
+git checkout -b add-comandos
+nano comandos.txt
+git add comandos.txt
+git commit -m "Adiciona comandos utilizados na atividade"
+git remote add origin-atividade https://github.com/mateusArnaudGoldbarg/curso-git-ead-ifrn.git
+git push origin-atividade main
+git push origin-atividade add-comandos
