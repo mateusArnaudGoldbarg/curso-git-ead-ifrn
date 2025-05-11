@@ -3,11 +3,11 @@ cd tarefa-git
 git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead .
 echo "Esta é a versão da branch main." > texto.txt
 git add texto.txt
-git commit -m "Adiciona texto.txt na branch main"
+git commit -m "texto branch main"
 git checkout -b feature-1
 echo "Esta é a versão da branch feature-1." > texto.txt
 git add texto.txt
-git commit -m "Modifica texto.txt na branch feature-1"
+git commit -m "texto branch feature-1"
 git checkout main
 echo "Esta é outra versão na branch main." > texto.txt
 git add texto.txt
